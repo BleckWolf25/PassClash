@@ -31,6 +31,7 @@ from pathlib import Path
 
 from . import hashes
 
+
 # ---------- DATACLASSES
 @dataclass
 class Target:

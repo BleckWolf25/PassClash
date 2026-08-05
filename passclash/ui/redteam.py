@@ -12,7 +12,7 @@ Description:
     This module implements the Red Team interface, providing hashcat-style attack configuration
     with multiple modes (dictionary, mask, hybrid, rules), wordlist selection, target specification,
     and hardware upgrades. The interface displays live cracking progress with terminal-style status
-    output, shows recovered credentials in real-time, and provides event feeds for attack activities.
+    output, shows recovered credentials in real-time, & provides event feeds for attack activities.
     Red team can upgrade GPU hardware to increase cracking speed.
 
 Since: 05/08/2026

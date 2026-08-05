@@ -29,6 +29,7 @@ from ..scoring import round_summary
 from ..state import reset_state
 from .common import banner, render_events, targets_row
 
+
 # ---------- FUNCTIONS
 def render(state) -> None:
     """Render game-master controls, the scoreboard, and the event history."""

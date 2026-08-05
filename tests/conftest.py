@@ -21,6 +21,7 @@ Updated: 05/08/2026
 from passclash import hashes
 from passclash.scenario import GameState, Target
 
+
 # ---------- FIXTURE
 def make_state(*entries, budget: int = 120) -> GameState:
     """Build a small game state from ``(user, algorithm, plaintext)`` tuples."""

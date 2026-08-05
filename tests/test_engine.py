@@ -26,6 +26,7 @@ from conftest import make_state
 
 from passclash.engine import CrackingJob
 
+
 # ---------- FIXTURES
 def _wordlist(tmp_path: Path, words: list[str]) -> Path:
     p = tmp_path / "wl.txt"

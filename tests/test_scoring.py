@@ -24,6 +24,7 @@ from conftest import make_state
 from passclash import scoring
 from passclash.events import clear
 
+
 # ---------- FIXTURES
 def test_red_points_are_weighted_by_algo():
     """Red score gives each recovered algorithm its configured weight."""

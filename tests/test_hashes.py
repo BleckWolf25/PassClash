@@ -20,6 +20,7 @@ Updated: 05/08/2026
 # ---------- IMPORTS
 from passclash import hashes
 
+
 # ---------- FIXTURES
 def test_md4_empty_vector():
     """The public MD4 implementation matches the empty-message RFC vector."""

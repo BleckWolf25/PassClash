@@ -27,6 +27,7 @@ from ..events import emit, recent
 from ..scoring import check_detection
 from .common import banner, render_events, targets_row, visible_events
 
+
 # ---------- FUNCTIONS
 def render(state) -> None:
     """Render the blue-team SOC dashboard."""
