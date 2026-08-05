@@ -1,0 +1,28 @@
+{
+  "PassClash": {
+    "scope": "python",
+    "prefix": "fileheader",
+    "body": [
+      "\"\"\"",
+      "File: $TM_FILENAME",
+      "",
+      "Version: 1.0.0",
+      "Author: BleckWolf25",
+      "License: MIT",
+      "",
+      "Summary:",
+      "    ${1:One-phrase summary.}",
+      "",
+      "Description:",
+      "    ${2:Detailed explanation of the file's purpose and functionality.}",
+      "",
+      "Since: $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      "Updated: $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      "\"\"\"",
+      "# ---------- IMPORTS",
+      "",
+      "$0",
+    ],
+    "description": "Insert standard BleckWolf25 Python file header",
+  },
+}

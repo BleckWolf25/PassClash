@@ -1,0 +1,23 @@
+{
+  "files.exclude": {
+    "**/target": false,
+    "**/.git": true,
+    "**/.venv": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "**/target": true,
+    "**/.git": true,
+    "**/.venv": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/__pycache__": true
+  },
+  "editor.formatOnSave": true,
+  "pylint.ignorePatterns": [
+    "**/typeshed-fallback/**",
+    "**/.vscode-server/extensions/**/*.pyi"
+  ]
+}

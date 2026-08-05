@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "kevinrose.vsc-python-indent",
+    "njpwerner.autodocstring",
+    "ms-azuretools.vscode-containers",
+    "tamasfe.even-better-toml",
+    "ms-python.python",
+    "ms-python.black-formatter"
+  ]
+}
