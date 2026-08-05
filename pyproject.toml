@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passclash"
+version = "0.1.0"
+description = "Password-cracking red/blue team simulation for ethical-hacking training. Pure Python + Streamlit"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+  { name = "João Costa", email = "joaocosta@users.noreply.github.com" },
+]
+keywords = [
+  "security",
+  "education",
+  "ctf",
+  "password-cracking",
+  "hashcat",
+  "streamlit",
+  "red-team",
+  "blue-team",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+]
+dependencies = ["streamlit>=1.33", "bcrypt>=4.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.12", "pylint>=3.3"]
+
+[project.scripts]
+passclash = "passclash.app:cli"
+
+[tool.setuptools.packages.find]
+include = ["passclash*"]
+
+[tool.setuptools.data-files]
+"share/passclash/scenarios" = ["scenarios/default.json"]
+"share/passclash/wordlists" = ["wordlists/rockyou_top5k.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pylint.main]
+py-version = "3.13"
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.design]
+# Stateful simulations intentionally aggregate closely related session and round data.
+max-attributes = 20
+max-public-methods = 40
+max-args = 6
+max-positional-arguments = 6

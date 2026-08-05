@@ -1,0 +1,55 @@
+{
+  "name": "Nexus Corp breach \u2014 hash dump",
+  "description": "Red team: crack as many hashes as you can before the clock runs out. Blue team: detect, lock, rotate.",
+  "time_budget": 240,
+  "hashes": [
+    {
+      "user": "admin",
+      "algo": "MD5",
+      "plaintext": "admin123",
+      "digest": "0192023a7bbd73250516f069df18b500"
+    },
+    {
+      "user": "jcosta",
+      "algo": "SHA-256",
+      "plaintext": "summer2024",
+      "digest": "7d0c50df99bb292cf41a4ef5a480c943eaa6d369789a043a0cfd78d01d00d9ce"
+    },
+    {
+      "user": "svc_backup",
+      "algo": "SHA-256",
+      "plaintext": "qwerty123",
+      "digest": "daaad6e5604e8e17bd9f108d91e26afe6281dac8fda0091040a7a6d7bd9b43b5"
+    },
+    {
+      "user": "alice",
+      "algo": "MD5",
+      "plaintext": "princess1",
+      "digest": "5eae8782697c15b7a55054c66c96b33a"
+    },
+    {
+      "user": "bob",
+      "algo": "NTLM",
+      "plaintext": "trustno1",
+      "digest": "f773c5db7ddebefa4b0dae7ee8c50aea"
+    },
+    {
+      "user": "root",
+      "algo": "NTLM",
+      "plaintext": "toor",
+      "digest": "afc44ee7351d61d00698796da06b1ebf"
+    },
+    {
+      "user": "audit",
+      "algo": "SHA-256",
+      "plaintext": "passw0rd1",
+      "digest": "9ef0b2d0b3fc07b37f5b3f2114fe62d18e5c34cdf1124433fe8ad1c509368e99"
+    },
+    {
+      "user": "vault",
+      "algo": "bcrypt",
+      "plaintext": "hunter2",
+      "digest": "$2b$10$40GtAIOyw4ix8OqqPYvSH.nJp7FCLUdPQF2hs3jv4NWcChKZicFJ6"
+    }
+  ]
+}
